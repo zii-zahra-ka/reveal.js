@@ -1533,7 +1533,7 @@
         <h3>شریک context-aware</h3>
         <ul>
           <li>محصول، برند و OKR از قبل لود شده</li>
-          <li>هر خروجی با ساختار شش‌گانه استاندارد</li>
+          <li>هر خروجی با ساختار پنج‌گانه استاندارد</li>
           <li>هر تصمیم در <code>decision-log.md</code> ثبت می‌شود</li>
           <li>همه مارکترها با استاندارد یکسان</li>
           <li>Guardrails هماهنگ با Roadmap پروداکت</li>
@@ -2472,9 +2472,9 @@
 <section>
   <div class="container">
     <div class="eyebrow">Layer 1 · Policy · Output Standards</div>
-    <h2 class="section-title">ساختار شش‌گانه خروجی</h2>
+    <h2 class="section-title">ساختار پنج‌گانه خروجی</h2>
     <p class="section-intro">
-      هر خروجی ایجنت بدون استثنا این ساختار شش‌گانه را دارد. با یک نگاه،  می‌فهمیم
+      هر خروجی ایجنت بدون استثنا این ساختار پنج‌گانه را دارد. با یک نگاه،  می‌فهمیم
       خروجی کجای پروژه است و چه سطح تأییدی نیاز دارد.
     </p>
 
@@ -2482,7 +2482,7 @@
       <div class="std-card">
         <div class="std-num">۱</div>
         <h4>پیوست به OKR</h4>
-        <p>ارتباط اقدام با اهداف کلیدی سازمان. بدون این بخش، پیشنهاد در هوا معلق است.</p>
+        <p>این اقدام در خدمت کدام OKR است؟ </p>
       </div>
       <div class="std-card">
         <div class="std-num">۲</div>
@@ -2491,25 +2491,16 @@
       </div>
       <div class="std-card">
         <div class="std-num">۳</div>
-        <h4><span class="badge-new">NEW</span>سطح اطمینان</h4>
-        <p>🟢 داده واقعی · 🟡 فرضیه معقول · 🔴 نیاز به اعتبارسنجی. در هر خروجی درج می‌شود.</p>
+        <h4>سطح اطمینان</h4>
+        <p> سیستم شفاف می‌گوید: این حرف چقدر سندیت دارد؟ 🟢 داده واقعی است، 🟡 فرضیه است، یا 🔴 فقط یک ایده برای تست است.</p>
       </div>
       <div class="std-card">
         <div class="std-num">۴</div>
         <h4>تحلیل ریسک</h4>
-        <p>Pre-mortem: نقاط شکست احتمالی + Contingency Plans. اجباری، نه اختیاری.</p>
+        <p>قبل از اجرا، سیستم نقاط ضعف را پیدا می‌کند (Pre-mortem) و می‌گوید اگر طرح شکست خورد، پلن B چیست.</p>
       </div>
       <div class="std-card">
         <div class="std-num">۵</div>
-        <h4>مرزهای عملیاتی</h4>
-        <p>لیست صریح Out-of-Scope — جلوگیری از Scope Creep.</p>
-      </div>
-      <div class="std-card">
-        <div class="std-num">۶</div>
-        <h4><span class="badge-new">NEW</span>طبقه‌بندی اقدام</h4>
-        <p>⚡ Quick Win (زیر ۲ هفته) یا 🏗️ Strategic Initiative (نیاز به برنامه‌ریزی).</p>
-      </div>
-    </div>
 
     <!-- NEW: OKR FALLBACK -->
     <div class="okr-fallback">
@@ -2573,7 +2564,6 @@
         <tr><td>«Churn بالا رفته»</td><td><code>/retention-audit</code></td><td><code>/retention-check</code></td></tr>
         <tr><td>«ROI کمپین را بسنجیم»</td><td><code>/data-pinpoint</code></td><td><code>/retention-check</code></td></tr>
         <tr><td>«بحران در شبکه‌های اجتماعی»</td><td><code>/crisis-management</code></td><td>—</td></tr>
-        <tr><td>«CRM جدید انتخاب کنیم»</td><td><code>/martech-platform</code></td><td>—</td></tr>
         <tr><td>«محتوای ارگانیک شروع کنیم»</td><td><code>/organic-growth</code></td><td><code>/brand-sprint</code></td></tr>
         <tr><td>«جلسه تصمیم مهمی داشتیم»</td><td><code>/decision-logger</code></td><td>خودکار در chains</td></tr>
       </tbody>
